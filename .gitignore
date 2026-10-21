@@ -1,0 +1,90 @@
+# Dependencies
+node_modules/
+ios/Pods/
+
+# Build and output
+/build/
+dist/
+web-build/
+coverage/
+DerivedData/
+*.ipa
+*.xcarchive
+*.dSYM.zip
+*.jsbundle
+*.tsbuildinfo
+
+# Expo and Metro
+.expo/
+expo-env.d.ts
+.metro-health-check*
+
+# Generated native folders (Android is not a release target)
+/android/
+.kotlin/
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.hmap
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+ios/.xcode.env.local
+
+# Environment and secrets (.env.example stays tracked)
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pem
+*.key
+*.jks
+*.keystore
+*.mobileprovision
+*.cer
+*.certSigningRequest
+
+# Logs and caches
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.cache/
+.eslintcache
+*.orig.*
+
+# Hosting and deploy tools (local state)
+.railway/
+.wrangler/
+.vercel/
+.netlify/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs (shared .vscode settings stay tracked)
+.idea/
+*.swp
+*.swo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# AI agents and local notes
+.claude/
+CLAUDE.md
+AGENTS.md
+.codex/
+docs/CHECKLIST.md
+docs/APPSTORE_RELEASE.md

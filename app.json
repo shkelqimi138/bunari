@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Bunari",
+    "slug": "bunari",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/bunari-app-icon.png",
+    "scheme": "bunari",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "buildNumber": "4",
+      "bundleIdentifier": "journal.w.sh",
+      "icon": "./assets/images/bunari-app-icon.png",
+      "usesAppleSignIn": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "appleTeamId": "945267LMP6"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/bunari-app-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-apple-authentication",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Bunari to add photos to your entries.",
+          "cameraPermission": "Allow Bunari to take photos for your entries.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Bunari to add your current location to an entry.",
+          "locationAlwaysAndWhenInUsePermission": "Bunari only uses your location when you add it to an entry, and never in the background.",
+          "locationAlwaysPermission": "Bunari only uses your location when you add it to an entry, and never in the background.",
+          "motionUsagePermission": "Bunari does not use motion or fitness data."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow Bunari to unlock your Private journal with Face ID."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0b0a09",
+          "image": "./assets/images/bunari-app-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow Bunari to unlock your Private journal with Face ID."
+        }
+      ],
+      "expo-sharing",
+      "expo-notifications",
+      "expo-image",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "backgroundColor": "#0b0a09"
+  }
+}

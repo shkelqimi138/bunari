@@ -1,0 +1,9 @@
+# Generated, vendored, or native files Prettier must not touch
+node_modules/
+ios/
+vendor/
+docs/design-handoff-ember/
+package-lock.json
+*.md
+*.html
+*.sql

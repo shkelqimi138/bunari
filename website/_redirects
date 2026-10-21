@@ -1,0 +1,7 @@
+# The privacy policy, support and terms are popups on the home page.
+/privacy /#privacy 301
+/privacy/ /#privacy 301
+/support /#support 301
+/support/ /#support 301
+/terms /#terms 301
+/terms/ /#terms 301
