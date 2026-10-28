@@ -8,7 +8,7 @@
     "scheme": "bunari",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "buildNumber": "4",
+      "buildNumber": "5",
       "bundleIdentifier": "journal.w.sh",
       "icon": "./assets/images/bunari-app-icon.png",
       "usesAppleSignIn": true,

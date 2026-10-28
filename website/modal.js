@@ -1,5 +1,5 @@
-// Privacy, support and terms popups: they open and close through the address (#privacy, #support,
-// #terms) with CSS alone. This script only moves keyboard focus into an open popup, returns it
+// Privacy, support, terms and health data popups: they open and close through the address (#privacy,
+// #support, #terms, #health-data) with CSS alone. This script only moves keyboard focus into an open popup, returns it
 // to the link that opened it, and lets Escape close it.
 (() => {
   let opener = null;

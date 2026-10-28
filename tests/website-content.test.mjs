@@ -90,3 +90,20 @@ test('the store buttons say "Coming soon" until the App Store ID exists, then li
     assert.doesNotMatch(site, /Coming soon to the App Store/);
   }
 });
+
+test('the home page links to the consumer health data page (Washington My Health My Data Act, 2026-10-28)', () => {
+  // The law asks for a link on the home page, so it sits in the footer next to the privacy policy.
+  const footer = site.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0] ?? '';
+  assert.match(footer, /<a href="#health-data">Health data<\/a>/);
+  const page = site.slice(site.indexOf('<section class="modal" id="health-data"'));
+  assert.ok(page.startsWith('<section class="modal" id="health-data"'));
+  for (const heading of [
+    'What we may collect',
+    'Why we use it',
+    'Where it comes from',
+    'Who receives it',
+    'Your rights',
+  ])
+    assert.match(page, new RegExp(`<h2>${heading}</h2>`), heading);
+  assert.match(page, /Private entries are encrypted on your iPhone/);
+});

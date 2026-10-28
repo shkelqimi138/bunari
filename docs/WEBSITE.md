@@ -8,7 +8,7 @@ It is plain HTML, one stylesheet, two small scripts (`modal.js`, `link.mjs`), an
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | Home: hero, how it works, features, the Private journal, screenshots; plus the privacy policy, support, and terms as popups |
+| `index.html` | Home: hero, how it works, features, the Private journal, screenshots; plus the privacy policy, support, terms, and health data as popups |
 | `modal.js` | Moves keyboard focus into an open popup and closes it with Escape; the popups also work without it |
 | `_redirects` | Sends the old page addresses (`/privacy`, `/support`, `/terms`) to the popups |
 | `404.html` | Shown for any address that does not exist |
@@ -32,13 +32,14 @@ python3 -m http.server 8080 --directory website
 
 Then open http://localhost:8080. Links start with `/`, so open the pages through this server, not by double-clicking the files.
 
-## Privacy policy, support, and terms
+## Privacy policy, support, terms, and health data
 
 These are popups on the home page, each with its own address:
 
 - `/#privacy`: the privacy policy URL for App Store Connect
 - `/#support`: the support URL for App Store Connect
 - `/#terms`
+- `/#health-data`: the consumer health data page that Washington's My Health My Data Act asks for, linked from the home page footer (added 2026-10-28, user)
 
 Opening one of these addresses shows the popup straight away. It works with CSS alone (`:target`); `modal.js` only adds focus handling and Escape.
 
