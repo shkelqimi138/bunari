@@ -629,8 +629,8 @@ p {
   padding-bottom: 18px;
 }
 
-/* Popups for privacy, support and terms: each opens at its own address (/#privacy, /#support, /#terms)
-   with CSS :target, so they work without JavaScript; modal.js only moves focus and closes on Escape. */
+/* Popups for privacy, support, terms and health data: each opens at its own address (/#privacy, /#support,
+   /#terms, /#health-data) with CSS :target, so they work without JavaScript; modal.js only moves focus and closes on Escape. */
 .modal {
   display: none;
   position: fixed;
